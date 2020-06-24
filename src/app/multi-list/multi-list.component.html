@@ -24,7 +24,7 @@
 			</ul>
 		</li>
 	</ng-container>
-	<li class="list-group-item">
+	<li class="list-group-item" (keyup.enter)="addItem()">
 		<div class="input-group">
 			<input type="text" [(ngModel)]="newEntry" [ngClass]="{'is-invalid': duplicateError}"
           class="form-control" placeholder="todo: translate" aria-describedby="">
